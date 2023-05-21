@@ -5,6 +5,11 @@
   color: grey;
 }
 
+.js-list{
+  display:flex;
+}
+
+
 li {
   list-style: none;
 }
