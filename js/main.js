@@ -22,6 +22,35 @@ const kittenThreeDesc=`<p class="card_description">Tienen la cabeza cuadrada y l
 const kittenThree = kittenThreeListElement+kittenThreeImage+kittenThreeName+kittenThreeRace+kittenThreeDesc;
 
 document.querySelector(".js-list").innerHTML= kittenOne + kittenTwo + kittenThree;
+const list=kittenOne + kittenTwo + kittenThree;
 
+
+
+const buttonSearch = document.querySelector(".js-button-search") 
+buttonSearch.addEventListener("click", (event)=> {
+event.preventDefault();
 const input_search_desc = document.querySelector('.js_in_search_desc');
 const descrSearchText = input_search_desc.value;
+
+const raceSearchText= document.querySelector('.js-search-race');
+raceSearchText = input_search_race.value;
+
+
+
+if( kittenOneDesc .includes(descrSearchText) )
+    
+    {document.querySelector(".js-list").innerHTML= kittenOne ;
+};
+if( kittenTwoDesc .includes(descrSearchText) )
+    
+    {document.querySelector(".js-list").innerHTML= kittenTwo ;
+};
+if( kittenThreeDesc .includes(descrSearchText) )
+    
+    {document.querySelector(".js-list").innerHTML= kittenThree ;
+};
+if( kittenOneRace .includes() )
+    
+    {document.querySelector(".js-list").innerHTML= kittenThree ;}
+})
+
